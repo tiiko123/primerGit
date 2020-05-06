@@ -17,11 +17,9 @@ public class App
         System.out.println(respuesta.suma());
         respuesta.mensaje();
         respuesta.arrayedit(5);
-<<<<<<< HEAD
-=======
+
         System.out.println("---------------");
         respuesta.operacion();
         
->>>>>>> cc6c0adf5c3fb283b9b6aa4e48b584a021fd3699
     }
 }
