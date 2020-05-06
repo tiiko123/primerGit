@@ -7,9 +7,18 @@ import java.util.ArrayList;
  *
  */
 public class Persona {
+<<<<<<< HEAD
 
 
     private int a,b, respuesta;
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> cc6c0adf5c3fb283b9b6aa4e48b584a021fd3699
+    private int a,b, respuesta;
+    public ArrayList lista = new ArrayList();
+>>>>>>> 89815a9a0b83534672e2e9d4002c532087bbf2ed
 
     public ArrayList lista = new ArrayList();
     Burbuja burbuja = new Burbuja();
@@ -34,7 +43,10 @@ public class Persona {
         burbuja.setArray(lista);
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 89815a9a0b83534672e2e9d4002c532087bbf2ed
     public Persona(int a, int b){
         this.a=a;
         this.b=b;
@@ -43,11 +55,63 @@ public class Persona {
     public void mensaje(){
         System.out.printf("Mensaje de hola");
     }
-   
+
     public int suma(){
 
         respuesta=a+b;
         return respuesta;
     }
-}
 
+    public void operacion(){
+        String cadena = "Hola amigos como estan";
+        ArrayList<String> palabras = new ArrayList<>();
+        String [] palabrasSeparadas = cadena.split(" ");
+
+        //palabrasSeparadas.get[i].substring("o",palabrasSeparadas.get[i].lenght);
+
+        /*
+        for(int i=0;i<palabrasSeparadas.length;i++){
+            if(palabrasSeparadas[i].equals("o")){
+                palabras.add(palabrasSeparadas[i]);
+            }
+        }*/
+
+        //if(palabrasSeparadas[0].substring(palabrasSeparadas[0].indexOf("o"))
+
+
+
+
+
+
+
+
+
+
+
+
+        for(int i=0;i<palabrasSeparadas.length;i++){
+
+            try{
+
+                 if(!palabrasSeparadas[i].substring(palabrasSeparadas[i].indexOf("como")).equals(null)){
+                 palabras.add(palabrasSeparadas[i]);
+
+                
+            }
+
+        }catch(Exception e){
+            System.out.println("No tiene el patron");
+        }
+    }
+
+    
+        for(int i = 0; i < palabras.size(); i++){
+            System.out.println(palabras.get(i));
+        }
+      
+
+
+    
+}
+}
+ 
