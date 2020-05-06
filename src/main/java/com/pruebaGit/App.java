@@ -12,6 +12,7 @@ public class App
         System.out.println( "Hello World!" );
 
         persona.mensaje();
-
+        persona.arrayedit(5);
     }
+
 }
