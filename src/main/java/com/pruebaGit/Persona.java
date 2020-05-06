@@ -7,10 +7,8 @@ import java.util.ArrayList;
  *
  */
 public class Persona {
-
-
+    private int a,b, respuesta;
     public ArrayList lista = new ArrayList();
-
 
     public void arrayedit(int a){
         for (int i=0;i<5;i++){
@@ -19,6 +17,21 @@ public class Persona {
         for (int i=0;i<5;i++){
             System.out.println(lista.get(i));
         }
+    }
+
+    public Persona(int a, int b){
+        this.a=a;
+        this.b=b;
+    }
+
+    public void mensaje(){
+        System.out.printf("Mensaje de hola");
+    }
+
+    public int suma(){
+
+        respuesta=a+b;
+        return respuesta;
     }
 
     public void operacion(){
@@ -38,7 +51,6 @@ public class Persona {
         //if(palabrasSeparadas[0].substring(palabrasSeparadas[0].indexOf("o"))
 
 
-        System.out.println(palabrasSeparadas[0].substring(palabrasSeparadas[0].indexOf("l")));
 
 
 
@@ -62,25 +74,16 @@ public class Persona {
         }catch(Exception e){
             System.out.println("No tiene el patron");
         }
-
     }
+
+    
         for(int i = 0; i < palabras.size(); i++){
             System.out.println(palabras.get(i));
         }
       
 
 
-
-          
-
-       
-
-
-
-    }
-
-
-
-   
     
 }
+}
+ 
