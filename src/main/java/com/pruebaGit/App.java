@@ -11,8 +11,7 @@ public class App
         Persona persona = new Persona();
         System.out.println( "Hello World!" );
 
-        persona.mensaje();
-        persona.arrayedit(5);
+        persona.operacion();
     }
 
 }

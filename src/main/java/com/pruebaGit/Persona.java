@@ -8,7 +8,9 @@ import java.util.ArrayList;
  */
 public class Persona {
 
+
     public ArrayList lista = new ArrayList();
+
 
     public void arrayedit(int a){
         for (int i=0;i<5;i++){
@@ -19,11 +21,66 @@ public class Persona {
         }
     }
 
+    public void operacion(){
+        String cadena = "Hola amigos como estan";
+        ArrayList<String> palabras = new ArrayList<>();
+        String [] palabrasSeparadas = cadena.split(" ");
+
+        //palabrasSeparadas.get[i].substring("o",palabrasSeparadas.get[i].lenght);
+
+        /*
+        for(int i=0;i<palabrasSeparadas.length;i++){
+            if(palabrasSeparadas[i].equals("o")){
+                palabras.add(palabrasSeparadas[i]);
+            }
+        }*/
+
+        //if(palabrasSeparadas[0].substring(palabrasSeparadas[0].indexOf("o"))
 
 
-    public void mensaje(){
-        System.out.printf("Mensaje de hola");
+        System.out.println(palabrasSeparadas[0].substring(palabrasSeparadas[0].indexOf("l")));
+
+
+
+
+
+
+
+
+
+
+        for(int i=0;i<palabrasSeparadas.length;i++){
+
+            try{
+
+                 if(!palabrasSeparadas[i].substring(palabrasSeparadas[i].indexOf("como")).equals(null)){
+                 palabras.add(palabrasSeparadas[i]);
+
+                
+            }
+
+        }catch(Exception e){
+            System.out.println("No tiene el patron");
+        }
+
     }
+        for(int i = 0; i < palabras.size(); i++){
+            System.out.println(palabras.get(i));
+        }
+      
+
+
+
+          
+
+       
+
+
+
+    }
+
+
+
    
     
 }
