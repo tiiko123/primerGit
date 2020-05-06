@@ -8,10 +8,19 @@ public class App
 {
     public static void main( String[] args )
     {
-        Persona persona = new Persona();
+    ;
+        Persona respuesta = new Persona(2,2);
         System.out.println( "Hello World!" );
 
-        persona.mensaje();
+<<<<<<< HEAD
+        respuesta.mensaje();
 
+        System.out.println(respuesta.suma());
+
+=======
+        persona.mensaje();
+        persona.arrayedit(5);
+>>>>>>> 30b8942b949afc9f3cc61602c4367ddf3b81e972
     }
+
 }
